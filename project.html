@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a doctor's portfolio</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      }
+      h1 {
+        padding-top: 50px;
+        margin-bottom: 0;
+        color: #60316e;
+        font-weight: bolder;
+      }
+      h2 {
+        padding-top: 20px;
+        color: #4b6289;
+      }
+      hr {
+        margin-top: 25px;
+      }
+      p {
+        color: #a7bcb9;
+        font-size: 13px;
+        line-height: 1;
+      }
+      img {
+        border-radius: 15px;
+        margin-top: 25px;
+      }
+      div {
+        padding: 40px;
+      }
+      button {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        background: #60316e;
+        color: #a3f7bf;
+        font-weight: 300;
+        border: 2px;
+        box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 30%);
+      }
+      button:hover {
+        cursor: pointer;
+        background: #a3f7bf;
+        color: #60316e;
+        border-color: #60316e;
+        font-weight: 500;
+        transition: all 200ms ease-in-out;
+      }
+      em {
+        font-size: 10px;
+        color: #a7bcb9;
+        padding: 40px 0px 20px 0px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rita's Portfolio</h1>
+    <h2>a doctor who is also a photography enthusiast</h2>
+    <strong>📷 sony alpha 7ii | huawei p30</strong>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/868/original/IMG_20210130_223535_396.jpg?1628458169"
+      alt="laSalette"
+      height="500"
+    />
+    <p>La Salette Park, Oliveira de Azeméis, Portugal | nov 2020</p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/874/original/IMG_20210110_190829_117.jpg?1628459479"
+      alt="cerdeira"
+      height="500"
+    />
+    <p>Cerdeira, Coimbra, Portugal | jan 2021</p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/876/original/IMG_20210109_215916_092.jpg?1628459513"
+      alt="candal"
+      height="300"
+    />
+    <p>Candal, Coimbra, Portugal | jan 2021</p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/877/original/IMG_20201227_181039_698.jpg?1628459529"
+      alt="covaodametade"
+      height="300"
+    />
+    <p>Covão D'Ametade, Covilhã, Portugal | dec 2020</p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/872/original/IMG_20210411_204400_272.jpg?1628459413"
+      alt="costanova"
+      height="335"
+    />
+    <p>Costa Nova Beach, Aveiro, Portugal | april 2021</p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/869/original/IMG_20200517_231013_229.jpg?1628459392"
+      alt="piodao"
+      height="335"
+    />
+    <p>Piódão, Coimbra, Portugal | may 2020</p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/871/original/IMG_20210613_141635_702.jpg?1628459407"
+      alt="conventocristo"
+      height="500"
+    />
+    <p>Convento de Cristo, Tomar, Portugal | june 2021</p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/875/original/IMG_20200627_150324_139.jpg?1628459496"
+      alt="vieira"
+      height="335"
+    />
+    <p>Vieira Beach, Leiria, Portugal | june 2020</p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/870/original/IMG_20210411_144015_862.jpg?1628459401"
+      alt="vagueira"
+      height="335"
+    />
+    <p>Vagueira Beach, Aveiro, Portugal | april 2021</p>
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/873/original/IMG_20210711_215855_897.jpg?1628459422"
+      alt="caldas"
+      height="500"
+    />
+    <p>Dom Carlos I Park, Caldas da Rainha, Portugal | july 2021</p>
+    <br />
+    <div>
+      <a href="https://www.instagram.com/rreigota.ph/" target="_blank"
+        >check some more on instagram</a
+      >
+    </div>
+    <br />
+    <button>Order a print!</button>
+    <br />
+    <em>pictures and coding by Rita Reigota</em>
+  </body>
+  <script>
+    function print() {
+      let name = prompt("What is your name?");
+      let instagram = prompt("Do you have an instagram account?");
+
+      if (instagram.toLowerCase() === "yes") {
+        alert(
+          "Thank you for the interest, " +
+            name +
+            "! You can DM me on instagram 📸 "
+        );
+      } else {
+        alert("Sorry, " + name + ". You have to reach me on instagram 😖");
+      }
+    }
+    let printButton = document.querySelector("button");
+    printButton.addEventListener("click", print);
+  </script>
+</html>
